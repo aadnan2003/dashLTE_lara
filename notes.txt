@@ -1,0 +1,61 @@
+
+Controller Types:
+    - Normal (Empty)
+    - Resource (API (5) - WEB (7))
+        - Types:
+            - Attribute Binding
+            - Model Binding
+        - Functions:
+            - WEB: 
+               - GET: index
+               - GET: create
+               - POST: store
+               - GET: show
+               - GET: edit
+               - PUT/PATCH: update
+               - DELETE: destroy
+            - API: index, store, show, update, destroy
+
+Normal:
+    php artisan make:controller UserController
+
+Resource Attribute Binding:
+    - php artisan make:controller UserController -r
+    - php artisan make:controller UserController --resource
+
+Resouce Model Binding:
+    - php artisan make:controller UserController --model=User
+
+Migration
+    - php artisan make:migration create_tableName_table
+    - php artisan make:migration create_tableName_table --create=customTableName
+
+    - php artisan make:migration add_columnName_to_tableName_table
+    - php artisan make:migration add_columnName_to_tableName_table --table=customTableName
+
+- Users
+    - Migration: php artisan make:migration create_users_table
+    - Migration: php artisan make:migration create_users_table --create=TableName
+
+    - Controller: php artisan make:controller UserController
+    - Controller: php artisan make:controller UserController -r
+    - Controller: php artisan make:controller UserController --model=User
+
+    - Model: php artisan make:model User
+
+    - Factory: php artisan make:factroy UserFactory
+
+    - Create Seeder: php artisan make:seeder UserSeeder
+    - Execute Seeder: php artisan db:seed UserSeeder
+
+Naming Rules:
+    - Class: ClassNameExample - UpperCamelCase
+    - Function: functionNameExample - lowerCamelCase
+    - Variables: variableNameExample - lowerCamelCase
+
+Create Model:
+    - php artisan make:model ModelName
+
+Make All in one command
+    - php artisan make:model Category -mcrfs
+    - php artisan make:model Category -all

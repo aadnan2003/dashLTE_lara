@@ -1,0 +1,18 @@
+.options {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.delete-btn {
+    border: none;
+    background-color: transparent;
+    color: red;
+}
+
+.no-data {
+    color: red;
+}
+.with-data {
+    color: green;
+}
