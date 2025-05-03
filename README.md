@@ -64,3 +64,22 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+# مشروع Laravel
+
+## بيانات الدخول لتجربة الموقع
+
+لإجراء اختبار للموقع، يمكنك استخدام بيانات الدخول التالية:
+
+- **البريد الإلكتروني**: admin@admin.com
+- **كلمة المرور**: 123123
+
+**ملاحظة**: هذه هي بيانات الدخول التجريبية التي يمكن للمستخدمين استخدامها لاختبار الموقع.
+
+## كيفية إعداد المشروع محليًا
+
+1. **استنساخ المشروع**:
+   ```bash
+   git clone https://github.com/your-username/your-project.git
